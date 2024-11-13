@@ -1,0 +1,15 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "line_messaging_api.py",
+            "use": "@vercel/python"
+        }
+    ],
+    "routes": [
+        {
+          "src": "/(.*)",
+          "dest": "line_messaging_api.py"
+        }
+    ]
+}
